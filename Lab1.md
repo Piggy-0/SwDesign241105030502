@@ -35,8 +35,8 @@ Các cơ chế phân tích giúp giải quyết các vấn đề phức tạp tr
  ## 3. Phân tích ca sử dụng Select Payment
 ### a. Mô Tả Ca Sử Dụng "Payment"
  - Tên ca sử dụng: Payment
- - Diễn giả chính: Khách hàng
- - Mô tả: Khách hàng thực hiện thanh toán cho đơn hàng của họ thông qua hệ thống. Hệ thống xử lý thanh toán và gửi thông báo cho khách hàng về trạng thái thanh toán.
+ - Diễn giả chính: Nhân viên
+ - Mô tả: Nhân viên thực hiện thanh toán cho đơn hàng của họ thông qua hệ thống. Hệ thống xử lý thanh toán và gửi thông báo cho nhân viên về trạng thái thanh toán.
 ### b. Các lớp phân tích cho ca sử dụng Selected Payment
  - Boundary Class: PaymentUI
  - Control Class: PaymentController
@@ -44,12 +44,12 @@ Các cơ chế phân tích giúp giải quyết các vấn đề phức tạp tr
 
 ### c. Biểu Sequence của ca sử dụng Select Payment
 
-![Sequence Diagram](https://www.planttext.com/api/plantuml/png/Z98nJiD044NxFSMKK7012XGf1I0Xe029rh6js8ez2-inaaj4IPKRO4MKaIYel4KAeznZJi0LcCLnx28cAMTttf__P_V7haOPUORoD57PB4OmEWkLvvCsCCupqcber4Jd67YcW5klI4Ea-qlbQoIZa_Pat9I9D4iLqxQrBMzC87UgbOIJiquCJk4wuchv21JLNpW54XyKUHW1wRh4esFLzNPWDrC4pjakuxry3n6TFq_2Nd7rKVJPx_cwH8ZgTvmAsxGDpBqpN2tWcUtBiC3EuPj39y5LgGLXEvS4wq-s2oUpo_-GYuUwz07T3WyAtj_yHSpsrL5its36rOhWANUP_dc0xIkA-IRqf9O8m_GenC3zi5y0003__mC0)
+![Sequence Diagram](https://www.planttext.com/api/plantuml/png/T9AnJiCm443t-ufJ9nZu0GPKAKAb4WAaKedLJQmcQc8Nnq7oY1YP-WT45MCb1gPuw13K__0Ny0kScng1r8pdUtVtxkHlknsMcYbT5Jb0kSW4Abbo01PhgV2oMERIS0upMOc4AOE3EsOABgRZ0R8IHzCnn59e9VEGqL4NvrpjaKa4z9XfWuTy26zLmXK0X1buTk7xuJdUfAxPB56dxQUOeoOddJAHefPjBKvEmLC4Jo9YHyvkidwK62BtemY-Tisx-Gj_hNQrmBHz4tE2EonqlbUkMUEJiy_z5LtxmsA-nZMr9CRP5KdjFfnT-xf_Ie4ESnxQEaRXLpuktztaAdFsnGFElkB2DLkDZvKNF7gQtvkIKkS-Qqcilmw6N2Jq1tu0003__mC0)
 
 ### d. Nhiệm vụ của từng lớp phân tích
 Boundary Class: PaymentUI
   - Mô tả: Lớp này quản lý giao diện người dùng cho việc thực hiện thanh toán.
-  - Nhiệm vụ: Thu thập thông tin thanh toán từ khách hàng và hiển thị kết quả thanh toán.
+  - Nhiệm vụ: Thu thập thông tin thanh toán và hiển thị kết quả thanh toán.
 
 Control Class: PaymentController
   - Mô tả: Lớp này xử lý logic thanh toán.
@@ -60,13 +60,13 @@ Entity Class: Payment
   - Nhiệm vụ: Lưu trữ thông tin thanh toán, chẳng hạn như số tiền, phương thức thanh toán và trạng thái thanh toán.
 
 Entity Class: Order
-  - Mô tả: Lớp này đại diện cho đơn hàng mà khách hàng đang thanh toán.
+  - Mô tả: Lớp này đại diện cho đơn hàng mà nhân viên đang thanh toán.
   - Nhiệm vụ: Lưu trữ thông tin chi tiết của đơn hàng.
 
 ### e. Một số thuộc tính và phương thức của các lớp phân tích
 PaymentUI:
   - Không có thuộc tính, tập trung vào các phương thức hiển thị yêu cầu nhập thông tin và hiển thị kết quả.
-  - Thu thập thông tin thanh toán từ khách hàng (số thẻ, ngày hết hạn, v.v.).
+  - Thu thập thông tin thanh toán (số thẻ, ngày hết hạn, v.v.).
   - Hiển thị thông báo kết quả thanh toán cho khách hàng.
 
 PaymentController:
