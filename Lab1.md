@@ -49,7 +49,7 @@ Các cơ chế phân tích giúp giải quyết các vấn đề phức tạp tr
 ### d. Nhiệm vụ của từng lớp phân tích
 Boundary Class: PaymentUI
   - Mô tả: Lớp này quản lý giao diện người dùng cho việc thực hiện thanh toán.
-  - Nhiệm vụ: Thu thập thông tin thanh toán và hiển thị kết quả thanh toán.
+  - Nhiệm vụ: Thu thập thông tin thanh toán từ nhân viên và hiển thị kết quả thanh toán.
 
 Control Class: PaymentController
   - Mô tả: Lớp này xử lý logic thanh toán.
@@ -67,7 +67,7 @@ Entity Class: Order
 PaymentUI:
   - Không có thuộc tính, tập trung vào các phương thức hiển thị yêu cầu nhập thông tin và hiển thị kết quả.
   - Thu thập thông tin thanh toán (số thẻ, ngày hết hạn, v.v.).
-  - Hiển thị thông báo kết quả thanh toán cho khách hàng.
+  - Hiển thị thông báo kết quả thanh toán cho nhân viên.
 
 PaymentController:
   - Nhận thông tin thanh toán từ PaymentUI.
@@ -84,7 +84,7 @@ Order:
   - Cung cấp thông tin cần thiết cho việc thanh toán.
 
 ### f. Mối quan hệ giữa các lớp
-  - PaymentUI - PaymentController: Kết hợp (Association). PaymentUI gửi thông tin thanh toán từ khách hàng đến PaymentController và nhận kết quả xử lý.
+  - PaymentUI - PaymentController: Kết hợp (Association). PaymentUI gửi thông tin thanh toán từ nhân viên đến PaymentController và nhận kết quả xử lý.
   - PaymentController - Payment: Thành phần (Composition). PaymentController tạo và quản lý các đối tượng Payment để lưu thông tin thanh toán.
   - PaymentController - Order: Kết hợp (Association). PaymentController truy cập Order để lấy thông tin đơn hàng cần thanh toán.
 
@@ -97,7 +97,7 @@ Giải Thích Biểu Đồ Lớp
   - PaymentUI: Chịu trách nhiệm giao tiếp với người dùng để thu thập thông tin thanh toán và hiển thị kết quả.
   - PaymentController: Chịu trách nhiệm xử lý logic thanh toán. Nó tương tác với Order để lấy thông tin cần thiết và với Payment để lưu trữ thông tin thanh toán.
   - Payment: Lưu trữ các thông tin liên quan đến thanh toán, bao gồm số tiền, phương thức thanh toán và trạng thái thanh toán. Nó cung cấp phương thức để xác nhận thanh toán.
-  - Order: Chứa thông tin về đơn hàng mà khách hàng đang thanh toán. Nó cung cấp phương thức để lấy thông tin chi tiết về đơn hàng.
+  - Order: Chứa thông tin về đơn hàng mà nhân viên đang thanh toán. Nó cung cấp phương thức để lấy thông tin chi tiết về đơn hàng.
 
  ## 4. Phân tích ca sử dụng Maintain Timecard
 ### a. Mô Tả Ca Sử Dụng "Payment"
