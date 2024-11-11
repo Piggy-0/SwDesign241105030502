@@ -6,7 +6,7 @@
 ### b. Các lớp phân tích
 - Lớp Boundary: PayrollAdministratorUI
 - Lớp Controller: ReportController
-- Lớp entities: ReportGenerator, Report, ReportStorage
+- Lớp Entities: ReportGenerator, Report, ReportStorage
 ### c. Biểu đồ Sequence
 
 ![CreateAdministrativeReport](https://www.planttext.com/api/plantuml/png/f9InJkD048RxVOefEGbU8BeWWf5yI5T43XIKZhEALonhv8mZkJnTGK6LYkAQS152GegWeB8BYaMynpu1ht2pkyab4LPq9roil3kVv_zdTkJt-kLWX76EnOLaB4umow4RbtacPMTm8PGOOHxRmtW4tGvZ_QnGWpWl6w7JOukT7hCaKqXHYFXbbcFWTvAxB570k4A1vI8QSiN_IaJXPj2TRHxr28s7t4LwZBNRS6AgsmmEDIs9NTfjrkt0tZuvQS6PVYWWCTLz0UYu_f9ZP9UWADW6mTZKlmIWS4Igvx0ZCqB42ja5DTJJ4lgcUaHudTWqoxDpKxqWOAghP1TGFoXGgVwjO4pvr1SM1Sv1s5hKi99Tg7mYDuibmf6f7q4AKryLa9fwTWcItXdG4uLEUobDkUi95VhsH9WQhhN9mG5ytVD6SrFDR5T-hBbzdUYPxvoZgR6MfiP-8-cVYaoQ-dej9PSZlk7jFDNF9DfiaVAS-BZBGE4RiKq7Fy1S3ToaV7zxAlvXKAJ5ckOaDFLSGBb9Bc-nr_BvFyoElPgndjejcSlrtD-DWydhLAM4asDVSw-nvaPsLVzsrhLx8MUgExJZT2ksoTck-UB-fy_-2zVi0rhjB-KF0000__y30000)
@@ -69,7 +69,7 @@
 ### b. Các lớp phân tích
 - Lớp Boundary: EmployeeUI
 - Lớp Controller: EmployeeReportController
-- Lớp entities: ReportGenerator, Report, ReportStorage
+- Lớp Entities: ReportGenerator, Report, ReportStorage
 ### c. Biểu đồ Sequence
 
 ![CreateEmployeeReport](https://www.planttext.com/api/plantuml/png/Z5JDYXD14BxtKnHxqiE-G0wocIIx2gk8Hj1ZfzDaHcUwGwSdx1p5moABXnn4H0HZa8M5u8gAE7tmq67Vev_0Lx2w9_zcqJaqpLTVVLLVTJ6_pQ-3WQPAvrbAADDIGIlhfxBWd7HaBhfK5KlaqHsW0wWJ9eLMCbtY3tXVAjseq9Ghpue85phH1LJ18owuebuUOutDc8UQcz13PD8Uzv4MwL9DEtJ0uRwIJpdJTwd0M8O9pSWp3WbPT0Bxjw1UWyYLdpNCHguypw6m5pcmSDMk74leM3mO7gJk-L4DZfoP9g2Jm8pjT8r2Kmt74lEI5GYf_G1xRMTUYnuCd1b1Bt7clOSp6EBrbA6CXCoPjngwpdm1EnPx1F2BVCd36hHLNi19xifFoA0YXe4TinWoEwaKcVs6ufLOI3o4_QhPjdBb1DBGqdzbHlEft4ReXG0TEtFspynWu5viFme4x8K8IbjZRg3IAt5DPIww95HkOCkRSmyZeQ0LwgvDdJGylVaNdJHtML-fpKROG7XQijFgYhdjQV7-JrOhabvTvciPDxJzMM2UDtgpac_Lu7YJD7Jc7QwFTpF4pHZwecXkMdNcar_wPJHd8YQjXPV7E7iGiIkdOjlBR7HrwSo4XMQMdjfn66zdXn5VyZcSh2bksY1XZUS2EX7mhBeo-nLVhlmk8COL_y4ME7OywUESpUdr2wJNsa7ccsJNXhIHEfq_sBm48kS5PbE94njNUq8EyCG_q1y0003__mC0)
@@ -128,4 +128,194 @@
 
 ![CreateAdministrativeReport](https://www.planttext.com/api/plantuml/png/L8x12SCm34Nlca8BP8SajYczjdG0jH6bu5X1KGwUBOUEr1KQnwMGquFtFaAVzTtEHchB607kigI1D6COfoYP-NP6ch63XoHJYNz_uKdKNBMHjQnwu6GlorZZYHChcUpD7LjH_gYksvAUN4e0wB1fjeDzWSDA_sC0lmCHeEKqbC-_0000__y30000)
 
+## 3. Ca sử dụng Login
+### a. Mô tả ngắn gọn
+  Ca sử dụng Login cho phép người dùng đăng nhập vào hệ thống bằng cách nhập tên đăng nhập và mật khẩu. Hệ thống sẽ kiểm tra tính hợp lệ của thông tin đăng nhập và xác thực quyền truy cập
+### b. Các lớp phân tích
+- Lớp Boundary: LoginUI
+- Lớp Controller: LoginController
+- Lớp Entities: Authenticator, User
+### c. Biểu đồ Sequence
+
+![Login](https://www.planttext.com/api/plantuml/png/X54nRiCm3Dpr2YAJ3JJ8xg68xMG8q2r8TrOYMWEA591I2x-jGv_KBvIoOQT3WMgGJiVJ7KXzVtxj9I6dVFK6ROeC5o4sBp47Xpp2KtmTmkK4AD0Q6qFYw6Uodo-Uk1GxGo4DQOGsfxS2BHOphVHBfHWNuc3C1BUFq3Pm34bnLYBWbG23WnkAV4HsfYsQhW6Xu7ecLupGIxMe7rPfRRgYxHjuHpyuJFIVleVjRCwKCeVbtH23Cf9zWcgYTaEOpjgWSiy5mYzl0xgcx4C3bacJItDd4b6hDRc-wxHdDyZDupYDyPojLN5L6_92S9hJ_ewuFpqoHwusYteTduvyQN6ZZi6PlMxbSty0003__mC0)
+
+### d. Nhiệm vụ của từng lớp phân tích:
+- LoginUI: Giao diện người dùng cho quá trình đăng nhập, nơi người dùng nhập tên và mật khẩu.
+- LoginController: Xử lý logic đăng nhập. Kiểm tra tính hợp lệ của tên và mật khẩu, xác thực và đăng nhập người dùng.
+- Authenticator: Kiểm tra tính hợp lệ của tên và mật khẩu, xác thực người dùng.
+- User: Lưu trữ thông tin người dùng trong hệ thống (thông tin đăng nhập, mật khẩu, vai trò,...).
+### e. Một số thuộc tính và phương thức của các lớp phân tích:
+- LoginUI: 
+  + username: Tên người dùng.
+  + password: Mật khẩu.
+  + getCredentials(): Nhận tên và mật khẩu từ người dùng.
+  + displayError(message: String): Hiển thị thông báo lỗi nếu thông tin đăng nhập không hợp lệ.
+  + displayLoginScreen(): Hiển thị giao diện đăng nhập cho người dùng.
+- LoginController:
+  + authenticator: Đối tượng thực hiện xác thực tên và mật khẩu.
+  + processLogin(username: String, password: String): Nhận tên và mật khẩu từ LoginUI, gọi Authenticator để kiểm tra tính hợp lệ và thực hiện đăng nhập.
+  + handleLoginError(): Xử lý khi tên hoặc mật khẩu không hợp lệ, yêu cầu người dùng nhập lại hoặc hủy đăng nhập.
+- Authenticator:
+  + validUsernames: Danh sách tên người dùng hợp lệ.
+  + validPasswords: Danh sách mật khẩu hợp lệ (hoặc kiểm tra với cơ sở dữ liệu).
+  + validateCredentials(username: String, password: String): Kiểm tra tính hợp lệ của tên người dùng và mật khẩu.
+- User:
+  + username: Tên đăng nhập của người dùng.
+  + password: Mật khẩu của người dùng.
+  + role: Vai trò của người dùng (ví dụ: quản trị viên, nhân viên).
+  + isValidPassword(password: String): Kiểm tra mật khẩu có đúng với người dùng không.
+  + getRole(): Lấy vai trò của người dùng sau khi đăng nhập thành công.
+### f. Mối quan hệ giữa các lớp
+  - LoginUI → LoginController: Quan hệ "uses" (sử dụng), vì LoginUI gửi yêu cầu xử lý đăng nhập đến LoginController.
+  - LoginController → Authenticator: Quan hệ "depends on" (phụ thuộc), vì LoginController cần Authenticator để xác thực thông tin đăng nhập.
+  - Authenticator → User: Quan hệ "associates" (liên kết), vì Authenticator kiểm tra và xác nhận thông tin từ User.
+### g. Biểu đồ lớp mô tả lớp phân tích
+
+![login](https://www.planttext.com/api/plantuml/png/UhzxlqDnIM9HIMbk3XTNKdvfNafYKQM2JtvwPbwefq9YiO8ZLt9-NabHVWv4q1d2oKaj0aawSQNcbMIML2eubfPaW9Z9YINvO1bdc4neCKIf2nUNeuAkBb2B4uXoXb0kNCvWIe6Boo4rBmNa2W00003__mC0)
+
+## 4. Ca sử dụng Maintain Employee Information
+### a. Mô tả ngắn gọn
+  Ca sử dụng "Maintain Employee Information" cho phép Payroll Administrator (Quản trị viên Lương) thực hiện các thao tác duy trì thông tin nhân viên như: thêm mới, cập nhật, và xóa. Payroll Administrator sẽ chọn hành động muốn thực hiện (thêm, cập nhật, hoặc xóa). Hệ thống sẽ hướng dẫn để nhập thông tin cần thiết, xác nhận và lưu lại thông tin.
+### b. Các lớp phân tích
+- Lớp Boundary: PayrollAdministratorInterface, EmployeeInformationForm
+- Lớp Controller: MaintainEmployeeController
+- Lớp Entities: Employee
+### c. Biểu đồ Sequence
+
+![MaintainEmployeeInformation](https://www.planttext.com/api/plantuml/png/v5OzRzD06DxlLxpAGZ8Wzaf1ZKAX4IBA4A4odXstFjK-1-UCwfa98IGG0mCBeQeg1JgLoHuwNF_8_OB-1TwpJU9pxDQ2RaHAx7llUTxFvnpVf5Ux2q534VaUeRO8GkXCQ1m6dWU3cSyuMuYGeha3T06J0I5M4F4P3UCrpe2Dk732Gsex6NwzAh7s_BaNn8upueT1w5F10luKRpAylY5sm0NwXSuBohZ0xn_6CD_md3oPpP8uN31HyftjuuAG1p1rvSe7xihl7DumkUAato-CuypuKXkXtoUJ0JnylCaPTc3eglG3XywMZmxPm92pIGL9h-Gg0bibvr4jiOIjH2iHXIj_yICGZ1kP6q5riv2rprJwbYD3fU_1qei8V9NyQ7IIyP2FvMA54I8mvjdyBhXHupELNh0cXbaXZW49KvKi0x1KSihXo6LbF6QRVcMtz6KQ8WqyzC1WzCIWTh71txWBjawafySzLCd5735u4TMfvtlZVA_ry0sFzIMtbKChLwq4OlR135yTR0LREvumYk4aGdXJNcXs0dH5DA5QOtb2hKHnFzf5sZiS_WB5IEzDld3zIPxgpgqdLTinOvIrkcwfw6ELN0bu7MdBjfmFv2MjoZYpjPPlrKDRhMxp_WTXDbHr8fTsFcoEzvUqfgxRqDlJEQX2weg__YYNg8OPLXzL98f79USLLTz9G4rR-fJL1FiRPL9FmFEYeVAdhuzmSXQRp-Ro4NcavTGZW9_cuCRZe1YN9V5_mrFf5mRTSSdxSH5SfP-HeVFjuMl0BCziNwNdSLOgTFyfSEOYwvkhNUOHTl4NNvT-0m00__y30000)
+
+### d. Nhiệm vụ của từng lớp phân tích:
+- PayrollAdministratorInterface:
+  + Cung cấp giao diện để Quản trị viên tiền lương lựa chọn thao tác muốn thực hiện (thêm, cập nhật, hoặc xóa nhân viên).
+  + Hiển thị các tùy chọn và yêu cầu Quản trị viên cung cấp thông tin liên quan (ví dụ: ID nhân viên khi cập nhật hoặc xóa).
+  + Quản lý việc hiển thị thông báo lỗi hoặc xác nhận khi cần thiết (ví dụ: khi không tìm thấy nhân viên hoặc khi Quản trị viên xác nhận xóa).
+- EmployeeInformationForm: 
+  + Hiển thị biểu mẫu để Quản trị viên nhập thông tin nhân viên (bao gồm tên, địa chỉ, lương, số an sinh xã hội, và các thông tin khác).
+  + Thu thập thông tin từ Quản trị viên và chuyển tiếp cho lớp Controller để xử lý (khi thêm hoặc cập nhật nhân viên).
+  + Cung cấp giao diện để chỉnh sửa thông tin nhân viên khi thực hiện thao tác cập nhật.
+- MaintainEmployeeController:
+  + Xử lý các yêu cầu từ PayrollAdministratorInterface (chọn thao tác thêm, cập nhật, hoặc xóa nhân viên).
+  + Khi thao tác là thêm hoặc cập nhật, yêu cầu EmployeeInformationForm thu thập thông tin nhân viên từ Quản trị viên.
+  + Sau khi nhận thông tin, MaintainEmployeeController sẽ xử lý và thực hiện các thay đổi cần thiết trong lớp Employee (thêm, cập nhật, hoặc xóa).
+  + Quản lý các thông báo và trạng thái kết quả (thành công hoặc lỗi) sau khi hoàn thành thao tác.
+  + Cung cấp các thông tin phản hồi (ví dụ: trả lại ID nhân viên khi thêm mới hoặc kết quả xóa khi thao tác hoàn tất).
+- Employee:
+  + Lưu trữ thông tin về nhân viên như tên, địa chỉ, loại nhân viên, lương, và các dữ liệu liên quan khác.
+  + Cung cấp các phương thức để tạo mới, cập nhật và xóa thông tin nhân viên từ cơ sở dữ liệu.
+  + Khi thao tác là xóa, sẽ đánh dấu nhân viên là đã bị xóa trong hệ thống (thay vì xóa hoàn toàn).
+### e. Một số thuộc tính và phương thức của các lớp phân tích:
+- PayrollAdministratorInterface:
+  + selectedAction: Lưu trữ thao tác mà Quản trị viên chọn (thêm, cập nhật, xóa nhân viên).
+  + employeeId: ID của nhân viên khi Quản trị viên thực hiện cập nhật hoặc xóa.
+  + chooseAction(): Cho phép Quản trị viên chọn thao tác (thêm, cập nhật, xóa).
+  + displayEmployeeForm(): Hiển thị biểu mẫu thông tin nhân viên.
+  + showMessage(String message): Hiển thị thông báo cho Quản trị viên (ví dụ: thông báo lỗi hoặc thành công).
+  + getEmployeeDetails(): Thu thập thông tin nhân viên từ Quản trị viên.
+- EmployeeInformationForm:
+  + employeeName: Tên của nhân viên.
+  + employeeType: Loại nhân viên (giờ, lương cố định, hoa hồng).
+  + salaryOrHourlyRate: Lương hoặc mức lương theo giờ.
+  + displayForm(): Hiển thị biểu mẫu nhập thông tin nhân viên.
+  + getInput(): Thu thập thông tin từ Quản trị viên và trả về dưới dạng đối tượng.
+- MaintainEmployeeController:
+  + action: Hành động mà Quản trị viên muốn thực hiện (thêm, cập nhật, xóa).
+  + employee: Đối tượng nhân viên để thao tác (thêm, cập nhật, xóa).
+  + handleAddEmployee(): Xử lý thêm mới nhân viên vào hệ thống.
+  + handleUpdateEmployee(): Xử lý cập nhật thông tin nhân viên.
+  + handleDeleteEmployee(): Xử lý xóa nhân viên khỏi hệ thống.
+  + validateEmployeeData(): Kiểm tra tính hợp lệ của thông tin nhân viên (trước khi thêm hoặc cập nhật).
+- Employee:
+  + employeeId: ID của nhân viên.
+  + name: Tên nhân viên.
+  + employeeType: Loại nhân viên (giờ, lương cố định, hoa hồng).
+  + salary: Lương của nhân viên (dành cho nhân viên lương cố định).
+  + hourlyRate: Mức lương theo giờ (dành cho nhân viên làm theo giờ).
+  + commissionRate: Mức hoa hồng (dành cho nhân viên hoa hồng).
+  + status: Trạng thái nhân viên (đã xóa hay không).
+  + createEmployee(): Tạo bản ghi nhân viên mới.
+  + updateEmployee(): Cập nhật thông tin nhân viên.
+  + deleteEmployee(): Đánh dấu nhân viên là đã xóa.
+  + getEmployeeById(String employeeId): Truy xuất thông tin nhân viên theo ID.
+  + validateData(): Kiểm tra tính hợp lệ của thông tin nhân viên.
+### f. Mối quan hệ giữa các lớp
+  - PayrollAdministratorInterface → MaintainEmployeeController: có quan hệ "uses". Gửi yêu cầu thao tác (thêm, cập nhật, xóa).
+  - MaintainEmployeeController → EmployeeInformationForm: có quan hệ "uses". Thu thập thông tin nhân viên từ biểu mẫu.
+  - MaintainEmployeeController → Employee: có quan hệ "depends on". Thực hiện thao tác thêm, cập nhật, xóa trên Employee.
+  - EmployeeInformationForm → MaintainEmployeeController: có quan hệ "depends on". Gửi thông tin đã thu thập cho MaintainEmployeeController.
+  - MaintainEmployeeController → PayrollAdministratorInterface:có quan hệ "uses". Trả kết quả thao tác (thành công, lỗi). 
+### g. Biểu đồ lớp mô tả lớp phân tích
+
+![maintainEmployee](https://www.planttext.com/api/plantuml/png/L90nRW9134Lxdy8Nu0AfM1Q8A2Abo0NCxi1QclMWMI_IdY27e4hAI8Y6YYaezYHp0gwG6KK1KLYodj__XM_XEksKlFQj1LYxNcho0xxJu9srHTsoSAUUrFcLgF4RgWnIXyN3NRGxwmPZLh9nlYLb9ykqP6i6bHDDJVX6B9hcNox_k3K-UoKOKTP7LuPpW08d4opn1L-P72h7otK7ipkCuSYepNYMRJeAIZD-2-vv_14eipLFraUJe-DNXViO3enr32Uq7CDd_nI0gP4wV-4N003__mC0)
+
+## 5. Ca sử dụng Maintain Purchase Order
+### a. Các lớp phân tích
+- Lớp Boundary:  CommissionedEmployeeInterface, PurchaseOrderForm
+- Lớp Controller: MaintainPurchaseOrderController
+- Lớp entities: PurchaseOrder
+### b. Biểu đồ Sequence
+![MaintainPurchaseOrder](https://www.planttext.com/api/plantuml/png/l5IzRjim4Dxv53UcGFe26GBRSf86QDeE6TAHaTcGY4Iw56NKOz6fA39axX8dA0guyDG21QGX0uEy1vyWhv2Z5FzGbJ9MW21GzttVVNT7yg6yxMM6QfEd2Q6nKHeYbQOYouIIRBINZXCrPOoGKvNB4TNJrl2XD4n_e343ca5_ZNsNwvZJZBtL8wRtbKvzV41Y9OrM2HnH8Gs-0IogWmdJ7XmH9eqm3IaV6HBIPWLUxa8VTY3YhhoGO3XLOEmiXgrZRkVfDaIkM8n1SloORJYnl-aBqlUi25a7hbm8cDfv3h4hVkO1tnKprSwFbbdVRpBj7ta6HaYukxoVIU3s2jTRXyDWpPKh_iQRw9WB_BhYrZmP6w3mA-7ABxuSLtw3Kx_88NN5hwuyPB2qz8PNXZjWZSexK8Gc1ghwWz-0JrNw40N-2QE_yhkeGCDbbcFjYXkOkF8pX7rOQrN3ov6ERVmnRi2mEGfxRwybJ8ITIyAIZ0KZwJRu6lMcWPZXJ662JeiTtV3mzi5Cx1KwTELNoI73Xj8DYOesQAamo69lQc9eFIZm6LUh8axyZgtmqcTPaV4qZUff-etxFtlLTFNfsVojxbghypfrLNMQjYkXCQLpVxRWO-wzhyut8JrKyRVW8m000F__0m00)
+### c. Nhiệm vụ của từng lớp phân tích:
+- CommissionedEmployeeInterface:
+  + Cho phép nhân viên có hoa hồng chọn thao tác họ muốn thực hiện (thêm, cập nhật, hoặc xóa đơn hàng).
+  + Hiển thị thông báo và yêu cầu nhập thông tin liên quan đến đơn hàng (ví dụ: ID đơn hàng, thông tin khách hàng, sản phẩm, v.v.).
+  + Hiển thị các thông báo lỗi hoặc xác nhận (ví dụ: đơn hàng không tồn tại, không phải của nhân viên này, hoặc đơn hàng đã đóng).
+- PurchaseOrderForm:
+  + Hiển thị biểu mẫu để nhân viên nhập thông tin chi tiết về đơn hàng (ví dụ: khách hàng, sản phẩm, địa chỉ thanh toán, ngày mua).
+  + Thu thập dữ liệu từ nhân viên và chuyển tiếp cho Controller để xử lý.
+-  MaintainPurchaseOrderController:
+  + Xử lý các yêu cầu từ CommissionedEmployeeInterface (thêm, cập nhật, xóa đơn hàng).
+  + Khi thao tác là Create, yêu cầu PurchaseOrderForm thu thập thông tin đơn hàng từ nhân viên.
+  + Kiểm tra tính hợp lệ của thông tin đơn hàng (ví dụ: đảm bảo đơn hàng không bị đóng, là của nhân viên này).
+  + Tương tác với PurchaseOrder (lớp thực thể) để tạo, cập nhật, hoặc xóa đơn hàng.
+  + Trả về kết quả thành công hoặc lỗi cho CommissionedEmployeeInterface.
+- PurchaseOrder:
+  + Quản lý và xử lý dữ liệu liên quan đến đơn hàng, bao gồm việc tạo, cập nhật, xóa và truy vấn thông tin.
+### d. Một số thuộc tính và phương thức của các lớp phân tích:
+- CommissionedEmployeeInterface: 
+  + selectedAction: Lưu trữ hành động mà nhân viên chọn (Tạo, Cập nhật, Xóa đơn hàng).
+  + employeeId: ID của nhân viên đang thực hiện thao tác.
+  + selectAction(): Cho phép nhân viên chọn thao tác (Tạo, Cập nhật, Xóa).
+  + displayOrderForm(): Hiển thị biểu mẫu để nhân viên nhập thông tin đơn hàng.
+  + displayMessage(String message): Hiển thị thông báo thành công hoặc lỗi cho nhân viên.
+  + getEnteredOrderInfo(): Lấy thông tin đơn hàng mà nhân viên đã nhập vào biểu mẫu.
+- PurchaseOrderForm: 
+  + orderId: ID của đơn hàng cần cập nhật hoặc xóa.
+  + customerName: Tên khách hàng.
+  + billingAddress: Địa chỉ thanh toán của khách hàng.
+  + products: Danh sách các sản phẩm trong đơn hàng.
+  + orderDate: Ngày tạo đơn hàng.
+  + collectOrderDetails(): Thu thập thông tin chi tiết về đơn hàng từ nhân viên.
+  + displayOrderDetails(PurchaseOrder order): Hiển thị chi tiết đơn hàng để nhân viên xem và chỉnh sửa.
+  + getOrderDetails(): Trả về thông tin đơn hàng mà nhân viên đã nhập.
+- MaintainPurchaseOrderController:  
+  + currentAction: Hành động hiện tại mà nhân viên đang thực hiện (Tạo, Cập nhật, Xóa).
+  + currentEmployeeId: ID của nhân viên thực hiện thao tác.
+  + orderService: Dịch vụ hoặc đối tượng giúp xử lý các thao tác liên quan đến đơn hàng (tạo, cập nhật, xóa).
+  + handleCreateOrder(): Xử lý thao tác tạo đơn hàng mới.
+  + handleUpdateOrder(): Xử lý thao tác cập nhật thông tin đơn hàng.
+  + handleDeleteOrder(): Xử lý thao tác xóa đơn hàng.
+  + validateOrderInfo(): Kiểm tra tính hợp lệ của thông tin đơn hàng (đảm bảo thông tin hợp lệ trước khi tạo hoặc cập nhật).
+  + getOrderById(): Lấy thông tin đơn hàng từ ID.
+  + confirmDeletion(): Xác nhận việc xóa đơn hàng từ nhân viên.
+- PurchaseOrder: 
+  + orderId: ID của đơn hàng.
+  + customerName: Tên khách hàng.
+  + customerBillingAddress: Địa chỉ thanh toán của khách hàng.
+  + products: Danh sách các sản phẩm trong đơn hàng.
+  + orderDate: Ngày tạo đơn hàng.
+  + status: Trạng thái đơn hàng (Mở, Đã đóng).
+  + commissionedEmployeeId: ID của nhân viên có hoa hồng đã tạo đơn hàng.
+  + createOrder(): Tạo đơn hàng mới và lưu vào hệ thống.
+  + updateOrder(): Cập nhật thông tin đơn hàng.
+  + deleteOrder(): Xóa đơn hàng khỏi hệ thống.
+  + getOrderById(String orderId): Lấy thông tin đơn hàng bằng ID.
+  + validateOrder(): Kiểm tra tính hợp lệ của đơn hàng (còn mở, là của nhân viên hiện tại, v.v.).
+  + closeOrder(): Đóng đơn hàng sau khi hoàn thành giao dịch.
+### e. Mối quan hệ giữa các lớp
+- CommissionedEmployeeInterface gửi yêu cầu từ nhân viên (chọn thao tác và cung cấp thông tin đơn hàng) đến MaintainPurchaseOrderController, nơi xử lý các thao tác như tạo, cập nhật, và xóa đơn hàng.
+- MaintainPurchaseOrderController yêu cầu PurchaseOrderForm hiển thị biểu mẫu cho nhân viên nhập thông tin đơn hàng hoặc hiển thị thông tin đơn hàng cần cập nhật.
+- MaintainPurchaseOrderController tương tác với PurchaseOrder để tạo, cập nhật, hoặc xóa đơn hàng trong hệ thống.
+- PurchaseOrderForm thu thập thông tin từ nhân viên và cung cấp cho PurchaseOrder để tạo hoặc cập nhật thông tin đơn hàng.
+### f. Biểu đồ lớp mô tả lớp phân tích
+![MaintainPurchaseOrder](https://www.planttext.com/api/plantuml/png/N8wn3G8n34LxJ-45ReUxou54WM25a1WHAR6HunGt6mKZiG842WJ5ro_UqzT_tEvZDQ_MIWOuIUFeTKKdfQHQap35JRbcMObsRAHd7mXznUdh7fk6Ywzqq4Yw5IsTpn24JINZtYUsLtuqzu6PjCiEY2tPtrGd2y24mu0EONutk5uB0ep4iPz-0W00__y30000)
 
