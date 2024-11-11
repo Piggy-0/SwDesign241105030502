@@ -1,5 +1,7 @@
 # LAB 2 PHÂN TÍCH CÁC CA SỬ DỤNG TRONG PAYROLL SYSTEM
 
+## A. Phân tích các ca sử dụng trong hệ thống Payroll System
+
 ## 1. Ca sử dụng Create Administrative Report
 ### a. Mô tả ngắn gọn:
   Ca sử dụng Create Administrative Report cho phép Payroll Administrator tạo một báo cáo quản lý dựa trên các tiêu chí cụ thể (loại báo cáo, ngày bắt đầu và kết thúc, tên nhân viên)
@@ -248,13 +250,17 @@
 ![maintainEmployee](https://www.planttext.com/api/plantuml/png/L90nRW9134Lxdy8Nu0AfM1Q8A2Abo0NCxi1QclMWMI_IdY27e4hAI8Y6YYaezYHp0gwG6KK1KLYodj__XM_XEksKlFQj1LYxNcho0xxJu9srHTsoSAUUrFcLgF4RgWnIXyN3NRGxwmPZLh9nlYLb9ykqP6i6bHDDJVX6B9hcNox_k3K-UoKOKTP7LuPpW08d4opn1L-P72h7otK7ipkCuSYepNYMRJeAIZD-2-vv_14eipLFraUJe-DNXViO3enr32Uq7CDd_nI0gP4wV-4N003__mC0)
 
 ## 5. Ca sử dụng Maintain Purchase Order
-### a. Các lớp phân tích
+### a. Mô tả ngắn gọn 
+  Ca sử dụng "Maintain Purchase Order" cho phép nhân viên thực hiện các thao tác quản lý đơn hàng, bao gồm thêm mới, cập nhật và xóa đơn hàng. Hệ thống hướng dẫn nhân viên nhập thông tin đơn hàng cần thiết, xác nhận thao tác và lưu lại kết quả
+### b. Các lớp phân tích
 - Lớp Boundary:  CommissionedEmployeeInterface, PurchaseOrderForm
 - Lớp Controller: MaintainPurchaseOrderController
 - Lớp entities: PurchaseOrder
-### b. Biểu đồ Sequence
+### c. Biểu đồ Sequence
+
 ![MaintainPurchaseOrder](https://www.planttext.com/api/plantuml/png/l5IzRjim4Dxv53UcGFe26GBRSf86QDeE6TAHaTcGY4Iw56NKOz6fA39axX8dA0guyDG21QGX0uEy1vyWhv2Z5FzGbJ9MW21GzttVVNT7yg6yxMM6QfEd2Q6nKHeYbQOYouIIRBINZXCrPOoGKvNB4TNJrl2XD4n_e343ca5_ZNsNwvZJZBtL8wRtbKvzV41Y9OrM2HnH8Gs-0IogWmdJ7XmH9eqm3IaV6HBIPWLUxa8VTY3YhhoGO3XLOEmiXgrZRkVfDaIkM8n1SloORJYnl-aBqlUi25a7hbm8cDfv3h4hVkO1tnKprSwFbbdVRpBj7ta6HaYukxoVIU3s2jTRXyDWpPKh_iQRw9WB_BhYrZmP6w3mA-7ABxuSLtw3Kx_88NN5hwuyPB2qz8PNXZjWZSexK8Gc1ghwWz-0JrNw40N-2QE_yhkeGCDbbcFjYXkOkF8pX7rOQrN3ov6ERVmnRi2mEGfxRwybJ8ITIyAIZ0KZwJRu6lMcWPZXJ662JeiTtV3mzi5Cx1KwTELNoI73Xj8DYOesQAamo69lQc9eFIZm6LUh8axyZgtmqcTPaV4qZUff-etxFtlLTFNfsVojxbghypfrLNMQjYkXCQLpVxRWO-wzhyut8JrKyRVW8m000F__0m00)
-### c. Nhiệm vụ của từng lớp phân tích:
+
+### d. Nhiệm vụ của từng lớp phân tích:
 - CommissionedEmployeeInterface:
   + Cho phép nhân viên có hoa hồng chọn thao tác họ muốn thực hiện (thêm, cập nhật, hoặc xóa đơn hàng).
   + Hiển thị thông báo và yêu cầu nhập thông tin liên quan đến đơn hàng (ví dụ: ID đơn hàng, thông tin khách hàng, sản phẩm, v.v.).
@@ -270,7 +276,7 @@
   + Trả về kết quả thành công hoặc lỗi cho CommissionedEmployeeInterface.
 - PurchaseOrder:
   + Quản lý và xử lý dữ liệu liên quan đến đơn hàng, bao gồm việc tạo, cập nhật, xóa và truy vấn thông tin.
-### d. Một số thuộc tính và phương thức của các lớp phân tích:
+### e. Một số thuộc tính và phương thức của các lớp phân tích:
 - CommissionedEmployeeInterface: 
   + selectedAction: Lưu trữ hành động mà nhân viên chọn (Tạo, Cập nhật, Xóa đơn hàng).
   + employeeId: ID của nhân viên đang thực hiện thao tác.
@@ -311,11 +317,183 @@
   + getOrderById(String orderId): Lấy thông tin đơn hàng bằng ID.
   + validateOrder(): Kiểm tra tính hợp lệ của đơn hàng (còn mở, là của nhân viên hiện tại, v.v.).
   + closeOrder(): Đóng đơn hàng sau khi hoàn thành giao dịch.
-### e. Mối quan hệ giữa các lớp
-- CommissionedEmployeeInterface gửi yêu cầu từ nhân viên (chọn thao tác và cung cấp thông tin đơn hàng) đến MaintainPurchaseOrderController, nơi xử lý các thao tác như tạo, cập nhật, và xóa đơn hàng.
-- MaintainPurchaseOrderController yêu cầu PurchaseOrderForm hiển thị biểu mẫu cho nhân viên nhập thông tin đơn hàng hoặc hiển thị thông tin đơn hàng cần cập nhật.
-- MaintainPurchaseOrderController tương tác với PurchaseOrder để tạo, cập nhật, hoặc xóa đơn hàng trong hệ thống.
-- PurchaseOrderForm thu thập thông tin từ nhân viên và cung cấp cho PurchaseOrder để tạo hoặc cập nhật thông tin đơn hàng.
-### f. Biểu đồ lớp mô tả lớp phân tích
+### f. Mối quan hệ giữa các lớp
+  - CommissionedEmployeeInterface → MaintainPurchaseOrderController: Quan hệ "uses" (sử dụng), vì CommissionedEmployeeInterface gửi yêu cầu thao tác đến MaintainPurchaseOrderController.
+  - MaintainPurchaseOrderController → PurchaseOrderForm: Quan hệ "uses" (sử dụng), vì MaintainPurchaseOrderController yêu cầu PurchaseOrderForm thu thập thông tin đơn hàng từ nhân viên.
+  - MaintainPurchaseOrderController → PurchaseOrder: Quan hệ "depends on" (phụ thuộc), vì MaintainPurchaseOrderController cần PurchaseOrder để thực hiện các thao tác như tạo, cập nhật, hoặc xóa đơn hàng.
+  - PurchaseOrderForm → PurchaseOrder: Quan hệ "associates" (liên kết), vì PurchaseOrderForm thu thập và chuyển tiếp thông tin đơn hàng đến PurchaseOrder.
+### g. Biểu đồ lớp mô tả lớp phân tích
+
 ![MaintainPurchaseOrder](https://www.planttext.com/api/plantuml/png/N8wn3G8n34LxJ-45ReUxou54WM25a1WHAR6HunGt6mKZiG842WJ5ro_UqzT_tEvZDQ_MIWOuIUFeTKKdfQHQap35JRbcMObsRAHd7mXznUdh7fk6Ywzqq4Yw5IsTpn24JINZtYUsLtuqzu6PjCiEY2tPtrGd2y24mu0EONutk5uB0ep4iPz-0W00__y30000)
 
+## 6. Ca sử dụng Run Payroll
+### a. Mô tả ngắn gọn 
+  Ca sử dụng "Run Payroll" mô tả quá trình hệ thống tự động xử lý bảng lương cho nhân viên vào mỗi thứ Sáu và ngày làm việc cuối cùng của tháng. Hệ thống sẽ tính toán tiền lương dựa trên các thông tin liên quan như thời gian làm việc, đơn hàng, thông tin nhân viên và các khoản khấu trừ hợp pháp. Hệ thống sẽ in phiếu lương nếu phương thức thanh toán là thư hoặc nhận trực tiếp, hoặc tạo giao dịch ngân hàng nếu là chuyển khoản trực tiếp.
+### b. Các lớp phân tích
+- Lớp Boundary:  PayrollInterface, BankSystemInterface
+- Lớp Controller: RunPayrollController
+- Lớp Entities: Employee, Payroll
+### c. Biểu đồ Sequence
+
+![RunPayroll](https://www.planttext.com/api/plantuml/png/X9F1Jjmm48RlVefvWQht7YeskwlI6oezqAF9fciBxnWvOuJFFN3Wn1kGLbLLf1Kz9weukE8z_0HzXOx3Xi22IYwHnj_y_--Pv6ztirEJTEHNHWXPadMm9uEpnamMAusw9YUvACIXzRYGBWp7xv4gzrcM5SWQ9kDn8V5eFzHKhHuHXIWj4ZV21uyRYUbTnLGk4rDH8MaAC5yT6nkglcqs53SjkJONuhc8yEejJE0D5Acz9lXpaTeV7agLsYR0OMg_uHBCxQ_R1fTYajafiv_Y5JCzUPgwDPZuUvkTPdR6x4Vd0vpwr7udMAJk6enEtPa7LF4hmecELtW7ppFCjdPRQdul5TUeW6niS3ZafFQfLBxFBjjyGI2LkdCWny9CaugDtjONqX3igOrWRlXPyakENl6IVNpe1O-KpUq2-EdD2ZPxnrFGiDJIvZkUbmfmcJEfUCa66Is6sHt4fkJ4gLtZmmPHcRfwCSMnqgczyKFqrniTac7CCxkVunRDtyH2Z8lPjHmEg5_CSylB-pZuttQVJFan16eq46A7pVFFyWy00F__0m00)
+
+### d. Nhiệm vụ của từng lớp phân tích:
+- PayrollInterface: Cung cấp giao diện để hệ thống hiển thị trạng thái và kết quả khi chạy bảng lương. Đây là lớp mà người dùng (chẳng hạn như Payroll Administrator) tương tác để xem báo cáo, xác nhận thanh toán, và thực hiện các thao tác liên quan đến bảng lương.
+- BankSystemInterface: Cung cấp giao diện để kết nối và truyền dữ liệu đến hệ thống ngân hàng để xử lý thanh toán qua chuyển khoản trực tiếp.
+-  RunPayrollController: lớp điều khiển chính trong ca sử dụng Run Payroll, chịu trách nhiệm xử lý các bước như tính toán lương, in phiếu lương, gửi giao dịch ngân hàng, v.v.
+- Employee: Đại diện cho một nhân viên trong hệ thống, bao gồm các thông tin cá nhân và thông tin thanh toán.
+- Payroll: Lớp đại diện cho bảng lương, bao gồm thông tin liên quan đến việc tính toán lương của tất cả nhân viên trong mỗi chu kỳ bảng lương.
+### e. Một số thuộc tính và phương thức của các lớp phân tích:
+- PayrollInterface:
+  + payrollStatus: Trạng thái của việc chạy bảng lương (hoàn thành, lỗi, đang chờ).
+  + employeeList: Danh sách nhân viên đã nhận thanh toán.
+  + displayPayrollStatus(): Hiển thị trạng thái bảng lương.
+  + displayEmployeePaymentDetails(): Hiển thị chi tiết thanh toán của từng nhân viên.
+-BankSystemInterface:
+  + transactionStatus: Trạng thái giao dịch với hệ thống ngân hàng.
+  + sendBankTransaction(): Gửi giao dịch ngân hàng.
+  + retryBankTransaction(): Thử lại giao dịch nếu hệ thống ngân hàng không sẵn sàng.
+- RunPayrollController:
+  + payrollDate: Ngày bảng lương được chạy.
+  + employeeList: Danh sách nhân viên cần được thanh toán.
+  + calculatePay(): Tính toán lương cho từng nhân viên dựa trên thông tin từ thẻ chấm công, đơn hàng và thông tin nhân viên.
+  + processPayment(): Xử lý thanh toán cho nhân viên, bao gồm in phiếu lương hoặc gửi giao dịch ngân hàng.
+  + checkBankSystemStatus(): Kiểm tra trạng thái hệ thống ngân hàng và xử lý nếu hệ thống không khả dụng.
+  + deleteEmployee(): Xóa nhân viên đã bị đánh dấu xóa sau khi bảng lương đã được xử lý.
+- Employee:
+  + employeeId: Mã số nhân viên.
+  + name: Tên nhân viên.
+  + salary: Lương cơ bản của nhân viên (nếu là nhân viên lương cố định).
+  + hourlyRate: Mức lương theo giờ (nếu là nhân viên lương theo giờ).
+  + benefits: Các phúc lợi (Bảo hiểm, nghỉ phép, v.v.).
+  + paymentMethod: Phương thức thanh toán (chuyển khoản, lấy phiếu lương, v.v.).
+  + status: Trạng thái của nhân viên (đang làm việc, đã nghỉ việc, v.v.).\
+  + calculatePay(): Tính toán lương cho nhân viên.
+  + generatePaycheck(): Tạo phiếu lương cho nhân viên.
+  + sendPayment(): Gửi thanh toán cho nhân viên qua chuyển khoản ngân hàng.
+- Payroll:
+  + payrollDate: Ngày chạy bảng lương.
+  + employeePayments: Danh sách các khoản thanh toán cho nhân viên.
+  + runPayroll(): Chạy bảng lương cho tất cả nhân viên.
+  + generateReports(): Tạo báo cáo về bảng lương.
+  + processPayments(): Xử lý thanh toán cho nhân viên.
+### f. Mối quan hệ giữa các lớp
+  - PayrollInterface → RunPayrollController: Quan hệ "uses" (sử dụng), vì PayrollInterface gửi yêu cầu xử lý bảng lương và nhận kết quả từ RunPayrollController.
+  - RunPayrollController → Employee: Quan hệ "associates" (liên kết), vì RunPayrollController cần truy xuất thông tin nhân viên để thực hiện tính toán lương.
+  - RunPayrollController → Payroll: Quan hệ "depends on" (phụ thuộc), vì RunPayrollController tạo và xử lý thông tin bảng lương thông qua Payroll.
+  - RunPayrollController → BankSystemInterface: Quan hệ "uses" (sử dụng), vì RunPayrollController cần kết nối với BankSystemInterface để gửi các giao dịch thanh toán ngân hàng.
+  - PayrollInterface → Payroll: Quan hệ "associates" (liên kết), vì PayrollInterface hiển thị thông tin từ Payroll cho người dùng.
+### g. Biểu đồ lớp mô tả lớp phân tích
+
+![RunPayroll](https://www.planttext.com/api/plantuml/png/L8x13S8m34Nldi8BT8SsQG_S44nWMYCX4WSbpY6pzS18h413Wn2d9xt_l-NN-koJKjJi7S0bP5ae5ZnIYS6vWoZ7AysCb73unORaVYv9sVyr3Cn1T1lYAKixONVZEDQ61HQzQS79Frme_9cDNzacrKq00tOTMWJJQ2l77LlSioprwJS0003__mC0)
+
+
+## B. Code Java mô phỏng ca sử dụng Maintain Timecard
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Scanner;
+
+// Lớp đại diện cho thông tin của một nhân viên
+class Employee {
+    private String employeeId;
+    private String name;
+
+    public Employee(String employeeId, String name) {
+        this.employeeId = employeeId;
+        this.name = name;
+    }
+
+    public String getEmployeeId() {
+        return employeeId;
+    }
+
+    public String getName() {
+        return name;
+    }
+}
+
+// Lớp đại diện cho thông tin thẻ chấm công (timecard)
+class Timecard {
+    private String employeeId;
+    private Date date;
+    private float hoursWorked;
+
+    public Timecard(String employeeId, Date date, float hoursWorked) {
+        this.employeeId = employeeId;
+        this.date = date;
+        this.hoursWorked = hoursWorked;
+    }
+
+    public String getEmployeeId() {
+        return employeeId;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public float getHoursWorked() {
+        return hoursWorked;
+    }
+
+    @Override
+    public String toString() {
+        return "Timecard{" +
+                "employeeId='" + employeeId + '\'' +
+                ", date=" + date +
+                ", hoursWorked=" + hoursWorked +
+                '}';
+    }
+}
+
+// Lớp đại diện cho bộ điều khiển quản lý thẻ chấm công
+class TimecardController {
+    private ArrayList<Timecard> timecards = new ArrayList<>();
+
+    // Phương thức để ghi lại thông tin thẻ chấm công
+    public void addTimecard(String employeeId, Date date, float hoursWorked) {
+        Timecard timecard = new Timecard(employeeId, date, hoursWorked);
+        timecards.add(timecard);
+        System.out.println("Timecard đã được ghi nhận: " + timecard);
+    }
+
+    // Phương thức để xem thẻ chấm công của nhân viên
+    public void viewTimecards(String employeeId) {
+        System.out.println("Danh sách thẻ chấm công của nhân viên ID: " + employeeId);
+        for (Timecard tc : timecards) {
+            if (tc.getEmployeeId().equals(employeeId)) {
+                System.out.println(tc);
+            }
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        TimecardController timecardController = new TimecardController();
+
+        // Danh sách nhân viên mẫu
+        Employee employee1 = new Employee("E001", "John Doe");
+        Employee employee2 = new Employee("E002", "Jane Smith");
+
+        // Ghi thẻ chấm công cho nhân viên
+        System.out.println("Nhập số giờ làm việc của nhân viên " + employee1.getName() + ":");
+        float hoursWorked1 = scanner.nextFloat();
+        timecardController.addTimecard(employee1.getEmployeeId(), new Date(), hoursWorked1);
+
+        System.out.println("Nhập số giờ làm việc của nhân viên " + employee2.getName() + ":");
+        float hoursWorked2 = scanner.nextFloat();
+        timecardController.addTimecard(employee2.getEmployeeId(), new Date(), hoursWorked2);
+
+        // Xem thẻ chấm công
+        System.out.println("\nDanh sách thẻ chấm công của " + employee1.getName() + ":");
+        timecardController.viewTimecards(employee1.getEmployeeId());
+
+        System.out.println("\nDanh sách thẻ chấm công của " + employee2.getName() + ":");
+        timecardController.viewTimecards(employee2.getEmployeeId());
+
+        scanner.close();
+    }
+}
