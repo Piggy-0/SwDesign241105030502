@@ -1,4 +1,4 @@
-# LAB 2 PHÂN TÍCH CÁC CA SỬ DỤNG TRONG PAYROLL SYSTEM
+# LAB 2 
 
 ## A. Phân tích các ca sử dụng trong hệ thống Payroll System
 
