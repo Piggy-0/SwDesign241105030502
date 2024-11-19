@@ -52,5 +52,5 @@
 | PaymentUIComponent | Middleware::User Interface Components |
 | PaymentUIComponent | Middleware::Print Services |
 
-## 4. Architectural layers and their dependencies**
+## 4. Architectural layers and their dependencies
 ![Diagram](https://planttext.com/api/plantuml/png/X98nJiD044NxESLNcbIvW1LP2U8084umh2Vs2djjxUmcYX0r1GrNe4p50LnGa8lu15o1E8Z28Gxjp9i_UgFvQZyM6jY7M9L4K-nVk_R55N1viTynpEURGSbRyKeDcmVE1PFv_5X9KznuKN61WwtT18_qHEUePTEKrlm3NKMrJbHn9tvjZOoJrnmOIsCEy6NedlKtPehRo0v5rpuZjrtxFbGRLPhDqb6J1AQkgkZwWYWsDXGqnfxa_9LDa4af-J4fr7IHFGaRt2D1L1a83TfdHd-kbC1By5RMX_rPFx7oTKMq49Vrd_4D003__mC0)
