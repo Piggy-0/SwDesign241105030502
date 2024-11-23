@@ -97,3 +97,6 @@
 
 #### Payment System:
 - Sử dụng `BankSystem` và `PrinterInterface` trong `PaymentProcessingSubsystem` thống nhất để quản lý cả quy trình gửi tiền trực tiếp và in tiền lương.
+
+#### Sơ đồ thống nhất các lớp và subsystem:
+![BieuDo](https://www.planttext.com/api/plantuml/png/b5JBYjim5DtdAqHM2JG_48OoD2rq5eL02btVaMuSOJtCbJnWMdzP5_sa_a9bM-DAjZ8mNXXppxaFdNEjlx__F3eFv5kjDgwMXf5rE7urGA2PaWPzro2pv6zsisc0rr0XstxHZR8T8hkqpwvp7lMM_Tomy705ph4PduBJWxfv-dna5q_IL4dSWCP268GWTAw0DD1fDFuRXg540UUWUAl0uncwtVx8hig27_4-cV6hRKbrhvCcm0KKa4HHW4vMQ-cSj2Q1Htm-ySElmw5KEoSKU-IKOgy-CU6xrCY1n3qJPZmrmSTWqObR6Dlzi5IZI5MBgjw0AZnPaPlL5pgUhF5abKBAUhlsMKl_IjfvVfmpzWdj1PGKmRqtY7skr-7myVzfZsmxDNBRaLKOQibloFAmQXWoKe7FqvxTq_SJcFeonhDJnc8nUPTj_GS6shR6HtNtAmNFWUMHdeRN5JWkAWSmrEKtvFLx2yUql60C5fSXAvZ4zVgtwpEXHtddVa7U2WrIC3GQakYsPCv6C249kMS26-kadn9NugpJ0s5juk3wFHCZV6TZgJMHi4ibdQO_AHkaMmwpg1Qc2ZfL5P9ZrWoA2-ZYSLRaeSIyr25pliZSaCYkbjxAJ9NWX9FWGOf7D6AuuVy1003__mC0)
