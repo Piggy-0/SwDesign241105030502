@@ -60,8 +60,8 @@ Mối quan hệ phụ thuộc giữa các hệ thống con:
 - **Phụ thuộc rõ ràng**: Mối quan hệ giữa các hệ thống con được thể hiện rõ qua sơ đồ và các phụ thuộc cụ thể.
 - **Tính mở rộng**: Các hệ thống con có thể mở rộng hoặc thay đổi mà không ảnh hưởng đến toàn bộ hệ thống.
 
-### Subsystem Class Diagram
+### Class Diagram
 ![Diagram](https://www.planttext.com/api/plantuml/png/Z5HBJiCm4Dtx55PNiEW5M214eR14AeZra0ojLSUEPYP0X3WP2ux45HZZfhXj46mIoUypBs-IVBv_dB40ITTumsiNB4L6KtbWjhUkmGgediKW5Br7ig_6MjjIh91vW8-EpTkUOXwfoLmNsaxk8wslOqUiL3thsXe41-v2G3ekJ6wWJzFsfrRWgywhS8DdhqqMFMimIE5o3c6zw5cmkQ7uqcSF8GZyYBG03zINCya5qNEa9rTXeMWJeExiNNkOyG847e0nSraYOO4K_CkczR77J9owEbq3D9Zk_5r0CbYYNA20ypmYtPsbr2smbMox7Q23RdCZCn-hzT28MowHVZfzCsPaxzFfwUvoJ-paZf4dnXokAv7twrV-3BnNmJX_R05_QlQMeFn5MW5RxG0qshRrn3xeSQ3N-f8gkQocS2zcgk0sryMspQZgVgjhRDuSfLffFXo2vQ3ZZ_S_Wxpytpn6igdB5GhRP_qexIfzbHDpXg5EVu0l0000__y30000)
 
-### Subsystem Component Diagram
+### Component Diagram
 ![Diagram](https://www.planttext.com/api/plantuml/png/b9DBJiCm48RtFiKe6rQz00jKqT8TKgLqXx9mdI4ryICQEq24E1aBZiGLS5vAI4AaBZsU-VxVC-EVh--jyvnygHLpkJH0rY4hkCXvXX2Tf4R1AOMuFBlAUTGHV320f_vYPuqdgnHICWuVBEacS2JxWi8_SXDu6etVSy_Ft672FjcWS-HLJO6GBj0vQRAPOfSo4Rpd9e-Rj53wNdMQqdYa6EbL2Xp5MyAoWmTTA5iXmc1rPg7FISQ7PLmiBfYMmUKCqhhTAIlofkG6zbYWIT48YOwnfTR2PdEte0Yt41tG1oa7sFjFmsqKCFD-NKL1pwLoqV-S9PiZqfkb72wsf3N6T7ere5k1W2XuLOzX3R0qwXOIuWt1ALci4YPBKLV7tbAhtoobDC-sxkXuSd-A9oquaSmof05Gj4yAZ6qOTFtLVW400F__0m00)
