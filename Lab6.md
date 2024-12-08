@@ -8,7 +8,7 @@
 
 ### 2. Xác định các trạng thái 
 
-![diagram](https://www.planttext.com/api/plantuml/png/T951JWCn34NtEONNIBq02rHH8S5kLDGLOk5c31eruupYf5BEng97wXMm9q0HJ7V9___Pidt-EAqbOyfb34uE0qEAGkxbvXLMgpjuwWF1BMm9-mevGYeC4zOKGt2pPw4jvJJGSU3tXt4AiHA9CizMzIUyb35sWy6NW5cD3gjY5pirX7ht9sHSbw8daQQCnDbQckc_ieejP6QqVJPHEv7c6cWIJ8rGJOgtrri9eLuhz8YiAxX7FkmOZpW4tC_RCWMaIgOHoiLno_chqzZAAWXnhphihMXEo88-3v7Tlp5-tQjhMmV_RRgrbh4JVm800F__0m00)
+![diagram](https://www.planttext.com/api/plantuml/png/T951QWCn34NtFeNMXLmWYn8Q2bc6bgv25uf73IOQUR3iWC_MHO-KAyIAMmBfP6V__zyNii_VFolDc78PsUan2AIev7PFdx1OFCCRvHJe5EJmEauSAv724juDW0bhYinkBcFi6jaNnjoCBTQ6tUpK4HhSNSYuROgULBioacGRQQR_pJPi9dD5-sKTsoHgkGwQ15CdcgR5s-chCDT7HHkKWUa5vVWXUCB0k6TgRQQ0LiqqGhavRZx_S1jxiWfACZGTzbQQ4ugYpo6A-xU65TcNNDUnHmV_vxbLQx7Fkm000F__0m00)
 
 ### 3. Xác định các thuộc tính
 
